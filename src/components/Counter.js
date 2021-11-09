@@ -3,13 +3,21 @@ import { Container, Button } from "react-bootstrap";
 
 const Counter = () => {
   const [number, setNumber] = useState(0);
+  const [name, setName] = useState("MOHAMMAD");
+  const nameHandler = () => {
+    setName("mohammad");
+  };
   const upHandler = () => {
-    setNumber(number + 1);
+    setNumber((prevNumber) => prevNumber + 1);
   };
 
   return (
     <div>
       <Container>
+        <h1>{name}</h1>
+        <Button variant="info" onClick={nameHandler}>
+          CHANGE
+        </Button>
         <h1>{number}</h1>
         <Button variant="info" onClick={upHandler}>
           UP ONE
