@@ -1,11 +1,11 @@
-import React from 'react';
-import Counter from "./components/Counter";
+import React from "react";
+import MyForm from "./components/MyForm";
 import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      <MyForm />
     </div>
   );
 };
