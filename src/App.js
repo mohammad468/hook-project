@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+import NewCounter from "./components/NewCounter";
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      <NewCounter />
     </div>
   );
 };
