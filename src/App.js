@@ -1,11 +1,19 @@
-import React from "react";
-import Data from "./components/Data";
+import React, { useState } from "react";
+import ComA from "./components/ComA";
 
+export const NameContext = React.createContext();
+export const AgeContext = React.createContext();
 
 const App = () => {
+  const [name, setName] = useState("mohammad");
+  const [age, setAge] = useState(22);
   return (
     <div>
-      <Data />
+      <NameContext.Provider value={name}>
+        <AgeContext.Provider value={age}>
+          <ComA name={name} />
+        </AgeContext.Provider>
+      </NameContext.Provider>
     </div>
   );
 };
