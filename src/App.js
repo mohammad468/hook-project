@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-// import Counter from "./components/Counter";
-import NewCounter from "./components/NewCounter";
+import React from "react";
+import NewGetData from "./components/NewGetData";
 
 const App = () => {
   return (
     <div>
-      <NewCounter />
+      <NewGetData />
     </div>
   );
 };
